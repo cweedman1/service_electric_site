@@ -18,6 +18,10 @@ ROLES = {
     "diagnostics": ("hobi-industri-NLBJ2I0lNr4-unsplash.jpg", (4, 3), [640, 960, 1440]),
     "thermal-camera": ("jakub-zerdzicki-B1Mx8T3odhI-unsplash.jpg", (4, 3), [640, 960, 1440]),
     "thermal-display": ("dlxmedia-hu-QZBbjCouORc-unsplash.jpg", (3, 2), [720, 1200, 1800]),
+    "worker-ladder": ("david-cain-TVPI5pHpNFw-unsplash.jpg", (4, 5), [560, 880, 1200]),
+    "finished-lighting": ("erol-ahmed-yP_8zvXWd_c-unsplash.jpg", (3, 2), [720, 1200, 1800]),
+    "thermal-operator": ("rene-ranisch-9P9R1s7MSuI-unsplash.jpg", (4, 3), [640, 960, 1440]),
+    "thermal-scene": ("jose-matute-azTe7kD3SJk-unsplash.jpg", (4, 3), [640, 960, 1440]),
 }
 
 

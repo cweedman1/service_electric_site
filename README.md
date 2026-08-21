@@ -24,6 +24,8 @@ Original owner-supplied and candidate files remain under `assets/images/`. Produ
 
 Run `python scripts/process-images.py` from the project root to recreate derivatives (Pillow required at build time). The role map produces only widths needed by current layouts, never upscales, and retains aspect ratio. Add a future photograph by preserving its original in `assets/images/`, assigning it a real display role in the script, generating derivatives, and adding truthful alt text. Stock imagery must never be described as Service Electric's employees, work, customers, facilities, or equipment.
 
+Current production roles are intentionally limited to the home lighting hero, a finished-lighting environment, a worker-on-ladder context, breaker work, diagnostic tools, and four distinct thermography views. The source filenames remain in `process-images.py`, preserving the link between every derivative and its candidate original.
+
 The original logo at `assets/images/logo/service_electric_logo_original.jpg` is immutable. Processing only trims blank paper and resizes the exact pixels; do not trace, redraw, recolor, or approximate it as SVG.
 
 See [architecture](docs/ARCHITECTURE.md) and the [launch checklist](docs/LAUNCH-CHECKLIST.md).

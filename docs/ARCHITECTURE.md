@@ -23,7 +23,11 @@ The site is plain semantic HTML with no runtime dependency. CSS is mobile-first 
 
 ## Visual system
 
-Warm off-white and near-black establish an approachable, technically grounded base. Service Electric red sets identity and section rhythm; yellow is reserved for focus, highlights, and primary actions. Thermal blue appears only in the thermography context. Photography is purposeful rather than gallery-like, and the mascot appears only where brand recognition or its story warrants it.
+Warm off-white and near-black establish an approachable, technically grounded base. Service Electric red sets identity and section rhythm; yellow is reserved for focus, highlights, and primary actions. Thermal blue appears only in the thermography context. Photography follows a work-to-result-to-technical-detail rhythm rather than repeating generic infrastructure.
+
+The typography uses a system-only stack: Trebuchet MS/Aptos Display/Segoe UI for broader, warm display forms and Segoe UI/Helvetica/Arial for sustained reading. Fluid sizes are capped, headings have controlled measure, and the primary tablet breakpoint remains stacked until 56rem to avoid cramped headline columns.
+
+Prominent mascot placements always retain the original black-on-light artwork inside a warm paper panel. The artwork is never blended, inverted, recolored, or treated as a watermark.
 
 ## Identity and content discipline
 

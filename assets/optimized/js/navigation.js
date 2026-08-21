@@ -22,5 +22,5 @@
       button.focus();
     }
   });
-  window.matchMedia("(min-width: 48rem)").addEventListener("change", close);
+  window.matchMedia("(min-width: 56rem)").addEventListener("change", close);
 })();
