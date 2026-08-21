@@ -1,0 +1,18 @@
+{
+  "siteOriginPlaceholder": "https://service-electric.example.invalid",
+  "productionDomainVerified": false,
+  "business": {
+    "name": "Service Electric of Arlington, LLC",
+    "contactName": "Ryan Witte",
+    "city": "Arlington",
+    "region": "Texas",
+    "masterLicense": "573272",
+    "tecl": "37180",
+    "verifiedServiceLabels": ["Residential", "Commercial", "Repairs", "Thermographic Images"]
+  },
+  "unresolved": [
+    "public phone", "public email", "street address", "business hours",
+    "verified service area", "production domain", "detailed service capabilities",
+    "thermography scope", "founding year and chronology"
+  ]
+}

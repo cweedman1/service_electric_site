@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PLACEHOLDER ORIGIN: replace only after the production domain is verified. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://service-electric.example.invalid/</loc></url>
+  <url><loc>https://service-electric.example.invalid/services.html</loc></url>
+  <url><loc>https://service-electric.example.invalid/thermographic-imaging.html</loc></url>
+  <url><loc>https://service-electric.example.invalid/about.html</loc></url>
+  <url><loc>https://service-electric.example.invalid/contact.html</loc></url>
+</urlset>

@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /
+
+# Slice 1 is intentionally non-indexable until the production domain and
+# business details are verified. Replace this file at launch.
+# Sitemap: https://service-electric.example.invalid/sitemap.xml
