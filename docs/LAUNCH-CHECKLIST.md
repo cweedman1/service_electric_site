@@ -3,16 +3,15 @@
 ## Owner verification required
 
 - [ ] Production domain and canonical URL format
-- [ ] Public phone number and email address
 - [ ] Publishable business address or explicit decision to omit it
 - [ ] Business hours
-- [ ] Exact service territory
+- [ ] Any preferred public wording beyond the verified Dallas-Fort Worth service area
 - [ ] Detailed residential, commercial, and repair capabilities
 - [ ] Thermographic imaging scope, equipment, qualifications, process, and deliverables
-- [ ] Founding year and precise family/business chronology, if to be published
+- [ ] Detailed family/business chronology beyond the verified 1987 founding year
 - [ ] Preferred contact/request workflow and responsible recipient
 - [ ] License labels and numbers rechecked against owner records
-- [ ] Approval of logo usage, photography selection, and development copy
+- [ ] Approval of logo usage, photography selection, and provisional customer copy
 
 ## Content and local SEO
 
@@ -38,6 +37,6 @@
 - [ ] Confirm WebP delivery, compression, caching, and no image upscaling
 - [ ] Configure CSP, `X-Content-Type-Options`, `Referrer-Policy`, and framing policy at the host
 - [ ] Confirm 404 behavior and redirect rules
-- [ ] Remove development-only language once verified business copy replaces it
+- [x] Remove visible development-only language from customer pages
 - [ ] Confirm analytics/cookie policy only if analytics is actually added
 

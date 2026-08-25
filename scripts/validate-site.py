@@ -74,8 +74,22 @@ ET.parse(ROOT / "sitemap.xml")
 identity = json.loads((ROOT / "data" / "site.json").read_text(encoding="utf-8"))
 if identity["productionDomainVerified"] is not False: errors.append("Placeholder origin must remain explicitly unverified")
 all_html = "\n".join(page.read_text(encoding="utf-8") for page in PAGES)
-for forbidden in ("24/7", "emergency service", "years in business", "warranty", "guaranteed"):
+visible_html = "\n".join(
+    re.sub(r"<[^>]+>", " ", re.sub(r"<head\b.*?</head>", "", page.read_text(encoding="utf-8"), flags=re.I | re.S))
+    for page in PAGES
+)
+for forbidden in ("24/7", "emergency service", "years in business", "warranty", "guaranteed", "certified thermographer"):
     if forbidden.casefold() in all_html.casefold(): errors.append(f"Unverified claim found: {forbidden}")
+for scaffolding in (
+    "awaiting verification", "pending owner review", "content boundary", "before launch",
+    "this foundation", "ready for verified details", "future service request",
+    "three questions this page needs answered", "the contact architecture is in place",
+):
+    if scaffolding.casefold() in visible_html.casefold(): errors.append(f"Visible scaffolding language found: {scaffolding}")
+for required in ('href="tel:+18174839094"', 'href="mailto:relamp2ryan@aol.com"'):
+    for page in PAGES:
+        if required not in page.read_text(encoding="utf-8"):
+            errors.append(f"{page.name}: missing required contact action {required}")
 
 if errors:
     print("VALIDATION FAILED")

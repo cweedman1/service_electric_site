@@ -1,6 +1,6 @@
-# Service Electric of Arlington  website foundation
+# Service Electric of Arlington website
 
-Slice 1 is a dependency-free, five-page static site for Service Electric of Arlington, LLC. It is intentionally content-limited: the layout is inspectable now, while facts awaiting Ryan Witte's verification remain plainly unresolved.
+This is a dependency-free, five-page static site for Service Electric of Arlington, LLC. Customer-facing copy uses verified identity, contact, founding-year, and Dallas-Fort Worth service-area information while unresolved detail remains tracked internally.
 
 ## Run locally
 
@@ -24,7 +24,7 @@ Original owner-supplied and candidate files remain under `assets/images/`. Produ
 
 Run `python scripts/process-images.py` from the project root to recreate derivatives (Pillow required at build time). The role map produces only widths needed by current layouts, never upscales, and retains aspect ratio. Add a future photograph by preserving its original in `assets/images/`, assigning it a real display role in the script, generating derivatives, and adding truthful alt text. Stock imagery must never be described as Service Electric's employees, work, customers, facilities, or equipment.
 
-Current production roles are intentionally limited to the home lighting hero, a finished-lighting environment, a worker-on-ladder context, breaker work, diagnostic tools, and four distinct thermography views. The source filenames remain in `process-images.py`, preserving the link between every derivative and its candidate original.
+Current production roles are intentionally limited to a hands-on electrical hero, a finished-lighting environment, a worker-on-ladder context, panel infrastructure, diagnostic tools, four thermography views, and one atmospheric contact image. The source filenames remain in `process-images.py`, preserving the link between every derivative and its candidate original.
 
 The original logo at `assets/images/logo/service_electric_logo_original.jpg` is immutable. Processing only trims blank paper and resizes the exact pixels; do not trace, redraw, recolor, or approximate it as SVG.
 

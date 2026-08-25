@@ -6,13 +6,35 @@
     "contactName": "Ryan Witte",
     "city": "Arlington",
     "region": "Texas",
+    "serviceArea": "Dallas-Fort Worth",
+    "foundingYear": 1987,
+    "officePhoneDisplay": "(817) 483-9094",
+    "officePhoneE164": "+18174839094",
+    "directPhoneDisplay": "(817) 692-8099",
+    "directPhoneE164": "+18176928099",
+    "email": "relamp2ryan@aol.com",
     "masterLicense": "573272",
     "tecl": "37180",
     "verifiedServiceLabels": ["Residential", "Commercial", "Repairs", "Thermographic Images"]
   },
+  "verified": [
+    "business name", "Ryan Witte as owner/contact", "Arlington, Texas home base",
+    "Dallas-Fort Worth service area", "founding year 1987",
+    "office phone", "Ryan direct phone", "public email", "Master license 573272",
+    "TECL 37180", "Residential", "Commercial", "Repairs", "Thermographic Images",
+    "family continuity and original-artwork history"
+  ],
+  "provisional": [
+    "general residential electrical-needs and troubleshooting descriptions",
+    "general commercial electrical-needs and troubleshooting descriptions",
+    "general repair and source-identification descriptions",
+    "plain-language thermographic imaging explanation and evaluation use cases"
+  ],
   "unresolved": [
-    "public phone", "public email", "street address", "business hours",
-    "verified service area", "production domain", "detailed service capabilities",
-    "thermography scope", "founding year and chronology"
+    "street address", "business hours", "precise service territory", "production domain",
+    "detailed residential capabilities", "detailed commercial capabilities",
+    "detailed repair capabilities", "exact thermography scope", "thermography deliverables",
+    "thermography qualifications or certifications", "detailed business chronology",
+    "preferred contact workflow", "whether both phone numbers remain public long-term"
   ]
 }
