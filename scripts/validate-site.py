@@ -39,13 +39,15 @@ class AuditParser(HTMLParser):
         if tag == "script": self._script_type, self._script_text = None, []
 
 
-def local_path(reference):
+def local_path(reference, page):
     reference = reference.split()[0].split("#")[0].split("?")[0]
     parsed = urlparse(reference)
     if parsed.scheme or reference.startswith(("mailto:", "tel:")): return None
     path = parsed.path
-    if path == "/": return ROOT / "index.html"
-    return ROOT / path.lstrip("/")
+    if not path: return None
+    if path.startswith("/"):
+        raise ValueError(f"domain-root path is not project-site portable: {reference}")
+    return page.parent / path
 
 
 errors, titles, descriptions = [], set(), set()
@@ -60,7 +62,11 @@ for page in PAGES:
         except json.JSONDecodeError as exc: errors.append(f"{page.name}: invalid JSON-LD: {exc}")
     for ref in parser.refs:
         for part in ref.split(","):
-            candidate = local_path(part.strip())
+            try:
+                candidate = local_path(part.strip(), page)
+            except ValueError as exc:
+                errors.append(f"{page.name}: {exc}")
+                continue
             if candidate and not candidate.exists(): errors.append(f"{page.name}: missing {candidate.relative_to(ROOT)}")
     if parser.descriptions and parser.descriptions[0] in descriptions: errors.append(f"{page.name}: duplicate meta description")
     descriptions.update(parser.descriptions)
